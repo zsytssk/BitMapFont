@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BitMapFont-自定义字体</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/layer/layer.js"></script>
+</head>
+<body>
+    <section class="container">
+        <div class="uploader">
+            <p>将一个或多个文件拖拽至此</p>
+        </div>
+        <div class="font-list scrollbar">
+            <ul>
+                <!--<li>
+                    <i class="img" style="background-image:url(../demo/font_number/,.png);"></i>
+                    <i class="letter" contenteditable="true">0</i>
+                    <i class="btn del"></i>
+                </li>-->
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="info">字号：--</p>
+        <div class="spacing_wrap">间距：<input type="number" name="" id="" class="spacing" value="5"></div>
+        <div class="font_type_wrap">
+            字体类型：
+            <label for="radio_xml"><input type="radio" name="font_type" id="radio_xml" value="xml">XML(Laya)</label>
+            <label for="radio_text"><input type="radio" name="font_type" id="radio_text" value="text">TEXT(Cocos-2d)</label>
+        </div>
+        <div class="btn deleteall">删除全部</div>
+        <div class="btn publish">生成字体</div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

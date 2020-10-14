@@ -1,0 +1,31 @@
+{
+  "name": "bitmapfont",
+  "version": "1.0.0",
+  "description": "简易BitMapFont字体制作软件",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug-brk=5858",
+    "pack-mac": "electron-packager . BitMapFont --platform=darwin --arch=x64 --overwrite --out ./dist",
+    "pack-win-64": "electron-packager . BitMapFont --platform=win32 --arch=x64 --overwrite --out ./dist",
+    "pack-win-32": "electron-packager . BitMapFont --platform=win32 --arch=ia32 --overwrite --out ./dist",
+    "pack-win": "npm run pack-win-32 && npm run pack-win-64",
+    "package": "npm run pack-mac && npm run pack-win"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/kiteoath/tool.bitmapfont.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "devtron": "^1.4.0",
+    "electron": "^1.4.12",
+    "electron-prebuilt": "^1.4.12"
+  },
+  "dependencies": {
+    "art-template": "^3.1.0",
+    "eventproxy": "^0.3.5",
+    "layout": "^2.2.0"
+  }
+}
